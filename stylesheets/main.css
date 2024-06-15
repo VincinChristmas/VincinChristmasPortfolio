@@ -1,0 +1,34 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .theTitle, .theSubtitle {
+    text-align: center;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: 0.2em;
+    text-shadow: 0 5px 0 #A9A9A9;
+
+  }
+
+  h1 span:hover {
+    display: inline-block;
+    transform: rotate(20deg);
+    cursor: grab;
+  }
