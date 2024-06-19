@@ -17,6 +17,8 @@ html {
     padding: 0;
   }
 
+  /* the title*/
+
   .theTitle, .theSubtitle {
     text-align: center;
     font-family: "Rubik Marker Hatch", system-ui;
@@ -32,3 +34,14 @@ html {
     transform: rotate(20deg);
     cursor: grab;
   }
+
+  /* the profile image*/
+
+  .profile {
+    display: block;
+    margin: 0 auto;
+    width: 26%;
+    border: 10px groove rgb(23, 23, 23);
+  }
+
+  
