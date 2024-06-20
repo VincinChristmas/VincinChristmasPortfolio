@@ -7,8 +7,10 @@
 }
 
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
 }
+
+
 
 *{
     box-sizing: border-box;
@@ -43,5 +45,56 @@ html {
     width: 26%;
     border: 10px groove rgb(23, 23, 23);
   }
+
+  .allTheLogos {
+    margin-top: 5em;
+    margin: 0 auto;
+    width: 90%;
+  }
+/* the HTML Logo*/
+  .htmlLogoHome {
+    float: left;
+    position: relative;
+    width: 8%;
+    clear: both;
+  }
+
+  .htmlLogo {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .htmlTop {
+    transform: rotate(-45deg) skew(15deg, 15deg);
+  }
+
+  .htmlLeft {
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+  }
+
+  .htmlRight {
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50% ,100%);
+  }
+
+  @keyframes htmlLogoSpin {
+    0% {
+      transform: rotateY(0deg)
+    }
+    100% {
+      transform: rotateY(360deg)
+    }
+  }
+
+  .htmlLogoSpin:hover {
+    animation: htmlLogoSpin 5s linear infinite;
+}
+
+  .htmlLogoSpin {
+    cursor: pointer;
+    transform-style: preserve-3d;
+  }
+
+  /* The CSS Logo */
 
   
