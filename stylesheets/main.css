@@ -98,13 +98,14 @@ html {
   /* The CSS Logo */
 
   .cssLogoSpin {
-    cursor: pointer;
+    animation: cssLogoSpin 5s linear infinite;
     transform-style: preserve-3d;
   }
 
-  .cssLogoSpin:hover {
+  /*.cssLogoSpin:hover {
     animation: cssLogoSpin 5s linear infinite;
   }
+    */
 
   @keyframes cssLogoSpin {
     0% {
