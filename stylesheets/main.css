@@ -199,38 +199,3 @@ html {
   margin-left: 50%;
 }
 
-.fullstackblock {
-  width: 100%;
-  margin-top: 30%;
-  text-align: center;
-  border: 2px solid gray;
-}
-
-.fullstackblock > img {
-  display: inline-block;
-  width: 16%;
-}
-
-  .mongo {
-    margin-right: 13%;
-}
-
-.react {
-  margin-left: 2%;
-}
-
-
-
-.nodejs {
-  margin-left: 20%;
-  padding-bottom: 3%;
-}
-
-
-
-
-
-
-
-
-  
