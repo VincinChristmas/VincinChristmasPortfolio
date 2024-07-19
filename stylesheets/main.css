@@ -199,3 +199,17 @@ html {
   margin-left: 50%;
 }
 
+
+
+.fullstackblock {
+  margin-top: 30%;
+}
+
+.nodejslogo {
+  width: 23%;
+  padding-left: 8%;
+}
+
+.nodejslogo:hover {
+  transform: rotate(35deg) scale(1.25);
+}
