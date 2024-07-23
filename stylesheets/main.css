@@ -19,7 +19,13 @@ html {
     padding: 0;
   }
 
+  body {
+    width: 95%;
+  }
+
   /* the title*/
+
+
 
   .theTitle, .theSubtitle {
     text-align: center;
@@ -28,7 +34,7 @@ html {
     font-size: 5rem;
     letter-spacing: 1rem;
     text-shadow: 0 5px 0 #A9A9A9;
-
+    margin-left: 5%;
   }
 
   h1 span:hover {
@@ -119,7 +125,7 @@ html {
   }
 
   .cssLogoHome {
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: 5%;
     position: relative;
     perspective: 300;
@@ -169,7 +175,7 @@ html {
 /* The JAVASCRIPT Logo */
 
 .jsContainer {
-  margin-left: 66%;
+  margin-left: 71%;
   width: 15%;
   perspective: 600;
   position: relative;
@@ -205,6 +211,7 @@ html {
 /* ALL THE FULL STACK LOGOS*/
 .fullstackblock {
   margin-top: 30%;
+  margin-left: 5%;
 }
 
 .nodejslogo {
@@ -232,3 +239,17 @@ html {
   transform: rotate(-35deg) scale(1.25);
   transition: 1s ease-out;
 }
+
+/*THE MEDIA LINKS */
+
+.linkbox {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 13%;
+}
+
+.medialink {
+  font-size: 5rem;
+  margin-right: 8%;
+}
+
