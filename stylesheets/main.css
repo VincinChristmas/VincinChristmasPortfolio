@@ -46,6 +46,8 @@ html {
     border: 10px groove rgb(23, 23, 23);
   }
 
+
+/* All The Logos*/
   .allTheLogos {
     float: left;
     margin: 0 auto;
@@ -200,7 +202,7 @@ html {
 }
 
 
-
+/* ALL THE FULL STACK LOGOS*/
 .fullstackblock {
   margin-top: 30%;
 }
@@ -213,6 +215,12 @@ html {
 .reactlogo {
   width: 12%;
   margin-left: 18%;
+}
+
+.mongodblogo {
+  width: 12%;
+  margin-left: 20%;
+  transform: skewY(37deg)
 }
 
 .reactlogo:hover {
