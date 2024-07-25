@@ -233,14 +233,29 @@ html {
     transition: 1s ease-out;
   }
 
+  /* ALL THE LINKS */
+
   .linkbox {
     width: 100%;
     text-align: center;
     margin-top: 8%;
+    margin-bottom: 3%;
     padding-right: 5%;
   }
   
   .medialink {
+    color:rgb(23, 23, 23);
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-shadow: 0 5px 0 #A9A9A9;
     font-size: 5rem;
-    margin-left: 5%;
+    margin-left: 6%;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+
+  .medialink:hover {
+    color: #168beb;
   }
