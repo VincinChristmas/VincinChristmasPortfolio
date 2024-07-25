@@ -13,19 +13,14 @@ html {
 
 
 *{
-    box-sizing: border-box;
-    max-width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  body {
-    width: 95%;
-  }
-
   /* the title*/
-
-
+   .intro {
+    width: 100%;
+   }
 
   .theTitle, .theSubtitle {
     text-align: center;
@@ -34,7 +29,6 @@ html {
     font-size: 5rem;
     letter-spacing: 1rem;
     text-shadow: 0 5px 0 #A9A9A9;
-    margin-left: 5%;
   }
 
   h1 span:hover {
@@ -52,17 +46,17 @@ html {
     border: 10px groove rgb(23, 23, 23);
   }
 
+  /* All The Logos*/
 
-/* All The Logos*/
+
   .allTheLogos {
-    float: left;
-    margin: 0 auto;
     margin-top: 2%;
-    margin-left: 15%;
-    width: 90%;
+    width: 100%;
   }
+
 /* the HTML Logo*/
   .htmlLogoHome {
+    margin-left: 16%;
     position: relative;
     width: 8%;
   }
@@ -105,15 +99,63 @@ html {
 
   /* The CSS Logo */
 
+  .cssContainer{
+    padding-top: 3%;
+    padding-left: 5%;
+    margin: 0 auto;
+    width: 50%;
+    perspective: 300;
+    position: relative;
+    
+  }
+  .cssCube {  
+    position: absolute;
+    transform: translateZ(-100px);
+    transform-style: preserve-3d;
+    width: 100%;
+  }
+
+
+  .cssSide {
+    background: rgba(191, 222, 241, 0.3);
+    border: 2px solid #2062af;
+    position: absolute;
+    width: 34%;
+  }
+
+  .cssLogo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 70%;
+  }
+
+  .cssFront {
+    transform: translateZ(100px);
+  }
+
+  .cssBack {
+    transform: rotateX(180deg) translateZ(100px);
+  }
+
+  .cssLeft {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+
+  .cssRight {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .cssTop {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  .cssBottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+
   .cssLogoSpin {
     animation: cssLogoSpin 5s linear infinite;
     transform-style: preserve-3d;
   }
-
-  /*.cssLogoSpin:hover {
-    animation: cssLogoSpin 5s linear infinite;
-  }
-    */
 
   @keyframes cssLogoSpin {
     0% {
@@ -124,132 +166,81 @@ html {
     }
   }
 
-  .cssLogoHome {
-    margin-left: 35%;
-    margin-top: 5%;
+  /* The JavaScript Logo */
+
+  .jsContainer {
+    margin-left: 70%;
+    width: 30%;
+    perspective: 600;
     position: relative;
-    perspective: 300;
-    width: 17%;
-    
+  }
+  .jsCard {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
   }
 
-  .cssContainer {
-    height: 100%;
-    width: 100%;
+  .jslogoFront {
+    width: 50%;
+  }
+  .jslogoBack {
+    width: 80%;
+  }
+
+  .jsCard:hover {
+    transform: rotateY(180deg);
+  }
+  .jsCard .jsSide {
+    backface-visibility: hidden;
     position: absolute;
-    transform: translateZ(-100px);
-    transform-style: preserve-3d;
+    width: 100%;
+  }
+  .jsCard .jsBack {
+    transform: rotateY(180deg);
+  }
+
+  /* FULLSTACK LOGO SECTION*/
+
+  .fullstackblock {
+    width: 100%;
+    margin-top: 25%;
+  }
+
+  .nodejslogo {
+    width: 18%;
+    margin-left: 10%;
   }
   
-  .cssBox {
-    background: rgba(191, 222, 241, 0.3);
-    position: absolute;
-    border: 2px solid #2062af;
+  .reactlogo {
+    width: 12%;
+    margin-left: 18%;
+  }
+  
+  .mongodblogo {
+    width: 12%;
+    margin-left: 20%;
+    transform: skewY(37deg)
+  }
+
+  .reactlogo:hover {
+    transform: translateX(-20px) skew(10deg, 20deg);
+    transition: 1s ease-out;
+  }
+  
+  .nodejslogo:hover {
+    transform: rotate(-35deg) scale(1.25);
+    transition: 1s ease-out;
+  }
+
+  .linkbox {
     width: 100%;
+    text-align: center;
+    margin-top: 8%;
+    padding-right: 5%;
   }
-
-  .cssBoxFront {
-    transform: rotateZ(100px);
+  
+  .medialink {
+    font-size: 5rem;
+    margin-left: 5%;
   }
-
-  .cssBoxBack {
-    transform: rotateX(180deg) translateZ(100px);
-  }
-
-  .cssBoxLeft {
-    transform: rotateY(-90deg) translateZ(100px);
-  }
-
-  .cssBoxRight {
-    transform: rotateY(90deg) translateZ(100px);
-  }
-
-  .cssBoxTop {
-    transform: rotateX(90deg) translateZ(100px);
-  }
-
-  .cssBoxBottom {
-    transform: rotateX(-90deg) translateZ(100px);
-  }
-
-/* The JAVASCRIPT Logo */
-
-.jsContainer {
-  margin-left: 71%;
-  width: 15%;
-  perspective: 600;
-  position: relative;
-}
-
-.jsCard {
-  width: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-}
-
-.jsCard:hover {
-  transform: rotateY(180deg);
-}
-
-.jsCard .jsSide {
-  backface-visibility: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-.jsCard .jsBack {
-  transform: rotateY(180deg);
-}
-
-.jsContainer:hover {
-  width: 35%;
-  margin-left: 50%;
-}
-
-
-/* ALL THE FULL STACK LOGOS*/
-.fullstackblock {
-  margin-top: 30%;
-  margin-left: 5%;
-}
-
-.nodejslogo {
-  width: 18%;
-  margin-left: 8%;
-}
-
-.reactlogo {
-  width: 12%;
-  margin-left: 18%;
-}
-
-.mongodblogo {
-  width: 12%;
-  margin-left: 20%;
-  transform: skewY(37deg)
-}
-
-.reactlogo:hover {
-  transform: translateX(-20px) skew(10deg, 20deg);
-  transition: 1s ease-out;
-}
-
-.nodejslogo:hover {
-  transform: rotate(-35deg) scale(1.25);
-  transition: 1s ease-out;
-}
-
-/*THE MEDIA LINKS */
-
-.linkbox {
-  text-align: center;
-  margin-top: 10%;
-  margin-left: 13%;
-}
-
-.medialink {
-  font-size: 5rem;
-  margin-right: 8%;
-}
-
