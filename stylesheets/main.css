@@ -29,7 +29,7 @@ html {
     width: 100%;
    }
 
-  .theTitle, .theSubtitle {
+  .theTitle, .theSubtitle, .portTitleName {
     text-align: center;
     font-family: "Rubik Marker Hatch", system-ui;
     font-weight: 400;
@@ -266,3 +266,48 @@ html {
   .medialink:hover {
     color: #168beb;
   }
+
+  /* PORTFOLIO PAGE */
+
+.portTitleLink {
+color: rgb(34, 34, 34);
+}
+
+.theProjects {
+  width: 100%;
+}
+
+.frontEnd {
+  position: relative;
+  width: 20%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  box-shadow: 6px 0 6px #A9A9A9;
+  border-radius: 6px;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 2px;
+    top: 2px;
+  }
+  100% {
+    left: 2px;
+    top: 0;
+  }
+}
+
+.frontEnd:hover {
+  animation: slide 0.2s ease-in-out .5s infinite alternate;
+  opacity: .9;
+  border: 2px solid rgb(240, 240, 97, 0.5)
+}
+
+.nasaPic {
+  width: 30%;
+}
+
