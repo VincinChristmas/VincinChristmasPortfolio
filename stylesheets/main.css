@@ -19,74 +19,106 @@ html {
     padding: 0;
   }
 
- body {
+.page {
   position: relative;
   background-color: #fff;
- }
+}
 
-  /* the title*/
-   .intro {
+.page__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #ff9999 79px, #ff9999 81px, transparent 81px),
+        linear-gradient(#e1e1e1 0.5em, transparent 0.5em);
+    background-size: 100% 3.5em;
+    background-position: 0 0;
+}
+
+.page__background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 55px;
+    bottom: 0;
+    width: 5px;
+    background-color: #ff9999;
+}
+
+.page__background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, #999 3px, transparent 3px);
+    background-size: 100% 33.33%;
+    background-position: 30px 5%, 30px 50%, 30px 95%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.intro {
     width: 100%;
-   }
+}
 
-  .theTitle, .theSubtitle, .portTitleName {
+.intro__title, .intro__subtitle {
     text-align: center;
     font-family: "Rubik Marker Hatch", system-ui;
     font-weight: 400;
     font-size: 5rem;
     letter-spacing: 1rem;
     text-shadow: 0 5px 0 #A9A9A9;
-  }
+}
 
-  h1 span:hover {
+.intro__title-char:hover, .intro__subtitle-char:hover {
     display: inline-block;
     transform: rotate(20deg);
     cursor: grab;
-  }
+}
 
-  /* the profile image*/
-
-  .profile {
+.intro__profile {
     display: block;
     margin: 7rem auto;
     width: 26%;
     border: 10px groove rgb(23, 23, 23);
-  }
+}
 
-  /* All The Logos*/
-
-
-  .allTheLogos {
+.logos {
     margin-top: 2%;
     width: 100%;
-  }
+}
 
-/* the HTML Logo*/
-  .htmlLogoHome {
+.logos__html {
     margin-left: 16%;
     position: relative;
     width: 8%;
-  }
+}
 
-  .htmlLogo {
+.logos__html-part {
     position: absolute;
     text-align: center;
     width: 100%;
-  }
+}
 
-  .htmlTop {
+.logos__html-part--top {
     transform: rotate(-45deg) skew(15deg, 15deg);
-  }
+}
 
-  .htmlLeft {
+.logos__html-part--left {
     transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
-  }
+}
 
-  .htmlRight {
+.logos__html-part--right {
     transform: rotate(-15deg) skew(-15deg, -15deg) translate(50% ,100%);
-  }
+}
 
-  @keyframes htmlLogoSpin {
+@keyframes htmlLogoSpin {
     0% {
       transform: rotateY(0deg)
     }
@@ -95,18 +127,13 @@ html {
     }
   }
 
-  .htmlLogoSpin:hover {
+  .logos__html--spin:hover {
     animation: htmlLogoSpin 5s linear infinite;
-}
-
-  .htmlLogoSpin {
     cursor: pointer;
     transform-style: preserve-3d;
   }
 
-  /* The CSS Logo */
-
-  .cssContainer{
+  .logos__css {
     padding-top: 3%;
     padding-left: 5%;
     margin: 0 auto;
@@ -115,7 +142,7 @@ html {
     position: relative;
     
   }
-  .cssCube {  
+  .logos__css-cube {  
     position: absolute;
     transform: translateZ(-100px);
     transform-style: preserve-3d;
@@ -123,43 +150,43 @@ html {
   }
 
 
-  .cssSide {
+  .logos__css-side {
     background: rgba(191, 222, 241, 0.3);
     border: 2px solid #2062af;
     position: absolute;
     width: 34%;
   }
 
-  .cssLogo {
+  .logos__css-logo {
     display: block;
     margin: 0 auto;
     padding-top: 15%;
     width: 70%;
   }
 
-  .cssFront {
+  .logos__css-side--front {
     transform: translateZ(100px);
   }
 
-  .cssBack {
+  .logos__css-side--back {
     transform: rotateX(180deg) translateZ(100px);
   }
 
-  .cssLeft {
+  .logos__css-side--left {
     transform: rotateY(-90deg) translateZ(100px);
   }
 
-  .cssRight {
+  .logos__css-side--right {
     transform: rotateY(90deg) translateZ(100px);
   }
-  .cssTop {
+  .logos__css-side--top {
     transform: rotateX(90deg) translateZ(100px);
   }
-  .cssBottom {
+  .logos__css-side--bottom {
     transform: rotateX(-90deg) translateZ(100px);
   }
 
-  .cssLogoSpin {
+  .logos__css--spin {
     animation: cssLogoSpin 5s linear infinite;
     transform-style: preserve-3d;
   }
@@ -175,74 +202,74 @@ html {
 
   /* The JavaScript Logo */
 
-  .jsContainer {
+  .logos__js {
     margin-left: 70%;
     width: 30%;
     perspective: 600;
     position: relative;
   }
-  .jsCard {
+  .logos__js-card {
     position: absolute;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
     width: 100%;
   }
 
-  .jslogoFront {
+  .logos__js-logo--front {
     width: 50%;
   }
-  .jslogoBack {
+  .logos__js-logo--back {
     width: 80%;
   }
 
-  .jsCard:hover {
+  .logos__js-card:hover {
     transform: rotateY(180deg);
   }
-  .jsCard .jsSide {
+  .logos__js-side {
     backface-visibility: hidden;
     position: absolute;
     width: 100%;
   }
-  .jsCard .jsBack {
+  .logos__js-side--back {
     transform: rotateY(180deg);
   }
 
   /* FULLSTACK LOGO SECTION*/
 
-  .fullstackblock {
+  .fullstack__block {
     width: 100%;
     margin-top: 25%;
   }
 
-  .nodejslogo {
+  .fullstack__logo--nodejs {
     width: 18%;
     margin-left: 10%;
   }
   
-  .reactlogo {
+  .fullstack__logo--react {
     width: 12%;
     margin-left: 18%;
   }
   
-  .mongodblogo {
+  .fullstack__logo--mongodb {
     width: 12%;
     margin-left: 20%;
     transform: skewY(37deg)
   }
 
-  .reactlogo:hover {
+  .fullstack__logo--react:hover {
     transform: translateX(-20px) skew(10deg, 20deg);
     transition: 1s ease-out;
   }
   
-  .nodejslogo:hover {
+  .fullstack__logo--nodejs:hover {
     transform: rotate(-35deg) scale(1.25);
     transition: 1s ease-out;
   }
 
   /* ALL THE LINKS */
 
-  .linkbox {
+  .links {
     width: 100%;
     text-align: center;
     margin-top: 8%;
@@ -250,7 +277,7 @@ html {
     padding-right: 5%;
   }
   
-  .medialink {
+  .links__link {
     color:rgb(23, 23, 23);
     font-family: "Rubik Marker Hatch", system-ui;
     font-weight: 400;
@@ -263,21 +290,42 @@ html {
     transition-timing-function: linear;
   }
 
-  .medialink:hover {
+  .links__link:hover {
     color: #168beb;
   }
 
   /* PORTFOLIO PAGE */
 
-.portTitleLink {
-color: rgb(34, 34, 34);
+.portfolio__header {
+  width: 100%;
+  text-align: center;
+  margin-top: 6rem;
+} 
+
+.portfolio__title {
+  font-family: "Rubik Marker Hatch", system-ui;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  text-shadow: 0 5px 0 #A9A9A9;
 }
 
-.theProjects {
+.portfolio__title-char:hover {
+  display: inline-block;
+  transform: rotate(20deg);
+  cursor: grab;
+} 
+
+.portfolio__title-link {
+color: rgb(34, 34, 34);
+
+}
+
+.portfolio__projects {
   width: 100%;
 }
 
-.frontEnd {
+.portfolio__project {
   position: relative;
   width: 20%;
   margin-left: 5%;
@@ -301,76 +349,37 @@ color: rgb(34, 34, 34);
   }
 }
 
-.frontEnd:hover {
+.portfolio__project:hover {
   animation: slide 0.2s ease-in-out .5s infinite alternate;
   opacity: .9;
   border: 2px solid rgb(240, 240, 97, 0.5)
 }
 
-.nasaPic {
+.portfolio__project-image {
   width: 30%;
 }
 
-.notebook-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-color: #fff;
-    background-image:
-        linear-gradient(90deg, transparent 79px, #ff9999 79px, #ff9999 81px, transparent 81px),
-        linear-gradient(#e1e1e1 0.5em, transparent 0.5em);
-    background-size: 100% 3.5em;
-    background-position: 0 0;
-}
-
-.notebook-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 55px;
-    bottom: 0;
-    width: 5px;
-    background-color: #ff9999;
-}
-
-.notebook-background::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(circle, #999 3px, transparent 3px);
-    background-size: 100% 33.33%;
-    background-position: 30px 5%, 30px 50%, 30px 95%;
-    background-repeat: no-repeat;
-    pointer-events: none;
-}
-
 /* Responsive styles for portfolio page */
-.portfolio-container {
+.portfolio {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.theProjects {
+.portfolio__projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.project-link {
+.portfolio__project {
     flex-basis: calc(25% - 20px);
     max-width: calc(25% - 20px);
 }
 
-.frontEnd,
-.nasaPic {
+.portfolio__project,
+.portfolio__project-image {
     width: 100%;
     height: auto;
     margin-left: 0;
@@ -380,28 +389,28 @@ color: rgb(34, 34, 34);
 }
 
 @media screen and (max-width: 1024px) {
-    .project-link {
+    .portfolio__project {
         flex-basis: calc(33.333% - 20px);
         max-width: calc(33.333% - 20px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .project-link {
+    .portfolio__project {
         flex-basis: calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
-    .portTitleName {
+    .portfolio__title {
         font-size: 4rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .project-link {
+    .portfolio__project {
         flex-basis: calc(100% - 20px);
         max-width: calc(100% - 20px);
     }
-    .portTitleName {
+    .portfolio__title {
         font-size: 3rem;
     }
 }

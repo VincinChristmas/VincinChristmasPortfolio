@@ -10,73 +10,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
     <title>Vincin Christmas</title>
 </head>
-<body>
-    <div class="notebook-background"></div>
+<body class="page">
+    <div class="page__background"></div>
     
-    <main class="main-content">
-        <!--My Name and Job Title-->
+    <main class="main">
         <section class="intro">
-            <h1 class="theTitle">
-                <span>V</span><span>i</span><span>n</span><span>c</span><span>i</span><span>n</span>
-                <span>C</span><span>h</span><span>r</span><span>i</span><span>s</span><span>t</span><span>m</span><span>a</span><span>s</span>
+            <h1 class="intro__title">
+                <span class="intro__title-char">V</span><span class="intro__title-char">i</span><span class="intro__title-char">n</span><span class="intro__title-char">c</span><span class="intro__title-char">i</span><span class="intro__title-char">n</span>
+                <span class="intro__title-char">C</span><span class="intro__title-char">h</span><span class="intro__title-char">r</span><span class="intro__title-char">i</span><span class="intro__title-char">s</span><span class="intro__title-char">t</span><span class="intro__title-char">m</span><span class="intro__title-char">a</span><span class="intro__title-char">s</span>
             </h1>
         
-            <h2 class="theSubtitle">
-                <span>Y</span><span>o</span><span>u</span><span>r</span>
-                <span>N</span><span>e</span><span>w</span>
-                <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span>
-                <span>E</span><span>n</span><span>g</span><span>i</span><span>n</span><span>e</span><span>e</span><span>r</span>
+            <h2 class="intro__subtitle">
+                <span class="intro__subtitle-char">Y</span><span class="intro__subtitle-char">o</span><span class="intro__subtitle-char">u</span><span class="intro__subtitle-char">r</span>
+                <span class="intro__subtitle-char">N</span><span class="intro__subtitle-char">e</span><span class="intro__subtitle-char">w</span>
+                <span class="intro__subtitle-char">S</span><span class="intro__subtitle-char">o</span><span class="intro__subtitle-char">f</span><span class="intro__subtitle-char">t</span><span class="intro__subtitle-char">w</span><span class="intro__subtitle-char">a</span><span class="intro__subtitle-char">r</span><span class="intro__subtitle-char">e</span>
+                <span class="intro__subtitle-char">E</span><span class="intro__subtitle-char">n</span><span class="intro__subtitle-char">g</span><span class="intro__subtitle-char">i</span><span class="intro__subtitle-char">n</span><span class="intro__subtitle-char">e</span><span class="intro__subtitle-char">e</span><span class="intro__subtitle-char">r</span>
             </h2>
         
-            <!--My Photo-->
-            <img class="profile" src="stylesheets/images/profilephoto.png" alt="Profile Photo">
+            <img class="intro__profile" src="stylesheets/images/profilephoto.png" alt="Profile Photo">
         </section>
 
-        <!--ALL the  Logos-->
-        <section class="allTheLogos">
-            <!--The HTML Logo-->
-            <div class="htmlLogoHome htmlLogoSpin">    
-                <img class="htmlLogo htmlTop" src="stylesheets/images/htmllogo.png" alt="HTML Logo">
-                <img class="htmlLogo htmlLeft" src="stylesheets/images/htmllogo.png" alt="HTML Logo">
-                <img class="htmlLogo htmlRight" src="stylesheets/images/htmllogo.png" alt="HTML Logo">
+        <section class="logos">
+            <div class="logos__html logos__html--spin">    
+                <img class="logos__html-part logos__html-part--top" src="stylesheets/images/htmllogo.png" alt="HTML Logo">
+                <img class="logos__html-part logos__html-part--left" src="stylesheets/images/htmllogo.png" alt="HTML Logo">
+                <img class="logos__html-part logos__html-part--right" src="stylesheets/images/htmllogo.png" alt="HTML Logo">
             </div>
         
-            <!--The CSS Logo-->
-            <div class="cssContainer cssLogoSpin">
-                <div class="cssCube">
-                    <figure class="cssSide cssFront"><img class="cssLogo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure> 
-                    <figure class="cssSide cssBack"><img class="cssLogo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
-                    <figure class="cssSide cssLeft"><img class="cssLogo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
-                    <figure class="cssSide cssRight"><img class="cssLogo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
-                    <figure class="cssSide cssTop"><img class="cssLogo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
-                    <figure class="cssSide cssBottom"><img class="cssLogo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>  
+            <div class="logos__css logos__css--spin">
+                <div class="logos__css-cube">
+                    <figure class="logos__css-side logos__css-side--front"><img class="logos__css-logo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure> 
+                    <figure class="logos__css-side logos__css-side--back"><img class="logos__css-logo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
+                    <figure class="logos__css-side logos__css-side--left"><img class="logos__css-logo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
+                    <figure class="logos__css-side logos__css-side--right"><img class="logos__css-logo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
+                    <figure class="logos__css-side logos__css-side--top"><img class="logos__css-logo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>
+                    <figure class="logos__css-side logos__css-side--bottom"><img class="logos__css-logo" src="stylesheets/images/csslogo.png" alt="CSS Logo"></figure>  
                 </div>
             </div> 
 
-            <!--The JAVASCRIPT Logo-->
-            <div class="jsContainer">
-                <div class="jsCard">
-                    <div class="jsSide"><img src="stylesheets/images/jslogo.png" class="jslogoFront" alt="JavaScript Logo"></div>
-                    <div class="jsSide jsBack"><img src="stylesheets/images/happyjavascript2.png" class="jslogoBack" alt="Happy JavaScript Logo"></div>
+            <div class="logos__js">
+                <div class="logos__js-card">
+                    <div class="logos__js-side logos__js-side--front"><img src="stylesheets/images/jslogo.png" class="logos__js-logo logos__js-logo--front" alt="JavaScript Logo"></div>
+                    <div class="logos__js-side logos__js-side--back"><img src="stylesheets/images/happyjavascript2.png" class="logos__js-logo logos__js-logo--back" alt="Happy JavaScript Logo"></div>
                 </div>
             </div>
         </section>
 
-        <section class="fullstacksection">
-            <!---FullStack Logo Section-->
-            <div class="fullstackblock">
-                <img src="stylesheets/images/nodejslogo.png" class="nodejslogo" alt="Node.js Logo">
-                <img src="stylesheets/images/reactlogo.webp" class="reactlogo" alt="React Logo">
-                <img src="stylesheets/images/mongodblogo.png" class="mongodblogo" alt="MongoDB Logo">
+        <section class="fullstack">
+            <div class="fullstack__block">
+                <img src="stylesheets/images/nodejslogo.png" class="fullstack__logo fullstack__logo--nodejs" alt="Node.js Logo">
+                <img src="stylesheets/images/reactlogo.webp" class="fullstack__logo fullstack__logo--react" alt="React Logo">
+                <img src="stylesheets/images/mongodblogo.png" class="fullstack__logo fullstack__logo--mongodb" alt="MongoDB Logo">
             </div>
         </section>
     
-        <!--Media Links-->
-        <section class="linkbox">
-            <nav>
-                <a href="portfolio.html" class="medialink">Portfolio</a>
-                <a href="https://github.com/VincinChristmas" target="_blank" class="medialink">Github</a>
-                <a href="https://www.linkedin.com/in/vincinchristmas/" target="_blank" class="medialink">LinkedIn</a>
+        <section class="links">
+            <nav class="links__nav">
+                <a href="portfolio.html" class="links__link">Portfolio</a>
+                <a href="https://github.com/VincinChristmas" target="_blank" class="links__link">Github</a>
+                <a href="https://www.linkedin.com/in/vincinchristmas/" target="_blank" class="links__link">LinkedIn</a>
             </nav>
         </section>
     </main>
