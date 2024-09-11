@@ -20,8 +20,8 @@ html {
   }
 
  body {
-  background-image: url("images/notebook1.jpg");
-  background-size: cover;
+  position: relative;
+  background-color: #fff;
  }
 
   /* the title*/
@@ -48,7 +48,7 @@ html {
 
   .profile {
     display: block;
-    margin: 0 auto;
+    margin: 4rem auto;
     width: 26%;
     border: 10px groove rgb(23, 23, 23);
   }
@@ -309,5 +309,100 @@ color: rgb(34, 34, 34);
 
 .nasaPic {
   width: 30%;
+}
+
+.notebook-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #ff9999 79px, #ff9999 81px, transparent 81px),
+        linear-gradient(#e1e1e1 0.5em, transparent 0.5em);
+    background-size: 100% 3.5em;
+    background-position: 0 0;
+}
+
+.notebook-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 55px;
+    bottom: 0;
+    width: 5px;
+    background-color: #ff9999;
+}
+
+.notebook-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, #999 3px, transparent 3px);
+    background-size: 100% 33.33%;
+    background-position: 30px 5%, 30px 50%, 30px 95%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/* Responsive styles for portfolio page */
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.theProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-link {
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.frontEnd,
+.nasaPic {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    max-width: 200px; /* Adjust this value to your preferred size */
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .project-link {
+        flex-basis: calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-link {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    .portTitleName {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-link {
+        flex-basis: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+    .portTitleName {
+        font-size: 3rem;
+    }
 }
 
